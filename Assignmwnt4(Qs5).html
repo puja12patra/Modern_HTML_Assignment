@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(238, 233, 226);
+            font-family: monospace;
+            position: relative;
+            padding-bottom: 50px;
+            min-height: 100vh;
+        }
+
+        nav {
+            display: flex;
+
+        }
+
+        #nav_1 {
+            width: 100px;
+        }
+
+        #nav_2 {
+            width: 100px;
+        }
+
+        #nav_3 {
+            width: 100px;
+        }
+
+        #nav_4 {
+            width: 100px;
+        }
+
+        #home,
+        #product {
+            font-size: 20px;
+        }
+
+        #business {
+            font-size: 20px;
+        }
+
+        #about_us {
+            font-size: 20px;
+        }
+
+        header {
+            font-family: Lobster, monospace;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            height: 55px;
+            padding: 20px 20px;
+            background-color: rgb(33, 151, 106);
+
+        }
+
+        footer {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background-color: rgba(139, 48, 38, 0.952);
+        }
+
+        @media (max-width: 500px) {
+            body {
+                flex-wrap: wrap;
+            }
+        }
+
+        #header-img {
+            max-width: 100%;
+            max-height: auto;
+        }
+
+        #business-img {
+            max-width: 40%;
+            max-height: 20%;
+        }
+
+        #video {
+            max-width: 100%;
+            max-height: auto;
+        }
+
+        .nav-link {
+            color: aliceblue;
+        }
+    </style>
+</head>
+<!-- 5. Create a web page that highlights the features of HTML5. Use appropriate semantic tags to structure the
+content and showcase at least three key features of HTML5 with explanations. -->
+
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <div id="nav_1"><a class="nav-link" href="#home">Home</a></div>
+            <div id="nav_2"><a class="nav-link" href="#product">Product</a></div>
+            <div id="nav_3"><a class="nav-link" href="#business">Business</a></div>
+            <div id="nav_4"><a class="nav-link" href="#about_us">About Us</a></div>
+        </nav>
+
+    </header><br><br><br><br><br><br><br>
+    <section id="home">
+        <h2>Feature 1: HTML Semantic</h2>
+        <p>Above is a good example of use of HTML Simantics. 'Semantic HTML' refers to clean coding that clearly defines
+            each section of our site in chronological order: Like we added header section and in it added nav bar. After
+            that we added main tag to add the main content of the website and at the end used footer tag to mark the end
+            of website.</p>
+        <h3>Below is proper structure of HTML5 semantics</h3>
+        <p>
+        <table border="2">
+            <tr>
+                <td colspan="2">&lt;header&gt;</td>
+            </tr>
+            <tr>
+                <td colspan="2">&lt;nav&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;section&gt;</td>
+                <td rowspan="2">&lt;aside&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;artical&gt;</td>
+            </tr>
+            <tr>
+                <td colspan="2">&lt;footer&gt;</td>
+            </tr>
+        </table>
+        </p>
+    </section>
+
+    <section id="product">
+        <h2>Feature:2 vedio and audio tags</h2>
+        <div id="video_div">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1UpiimyRx_E?si=4-TDecgw02UrwpxN"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <h3>Provide Alternatives for Audio and Video Content</h3>
+            <p>Users who cannot hear or see well might find it difficult to access the audio and video content of a
+                website.
+
+                To offer them a better experience, provide transcripts for any audio you use, and add easy-to-read
+                captions
+                on your video content.</p>
+
+        </div>
+    </section>
+
+    <section id="business">
+        <h2>Feature:3 Use Alt attrtibute in img tag</h2>
+        <p>Web Development makes application more attractive</p>
+        <img id="business-img" src="./Image/full stack dev.png" alt="Image showing the full stack web development tools"
+            title="Image showing the full stack web development tools">
+        <h3>Add 'Alt Text' to Your Site's Images</h3>
+        <p>Visual elements like images are an accessibility barrier to blind users and those with low vision.
+            They often have to rely on assistive technologies such as Screen Reader.
+            Screen Readers are software programs that read the text on the screen using a synthesizer.
+            So, we need to add Alt Text to describe your images to disabled users.</p>
+    </section>
+
+    <section id="about_us">
+        <h3>Feature:4 Form Validation</h3>
+        <article>
+            PW Skills is the largest online platform for tech skilling with courses in Hindi, English, and Hinglish. Our
+            cloud-based PW Virtual Lab ensures hands-on learning without expensive hardware.
+        </article>
+
+    </section>
+
+    <br><br>
+    <footer>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="email">Subscribe Us:</label>
+            <input id="email" type="email" name="email" placeholder="abc123@gmail.com" required>
+            <input id="submit" type="submit">
+        </form>
+    </footer>
+</body>
+
+</html>
